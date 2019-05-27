@@ -1,0 +1,28 @@
+Making a combo video is still a multi-step process.
+
+1) Use slp-parser-js (https://github.com/project-slippi/slp-parser-js) to extract combos from slp files
+2) Filter on the combos you want to include and generate a json file to use as an input for Dolphin that looks like the following: https://gist.github.com/JLaferri/a4f67390d7d5a39be89857c3375985c9
+3) Make sure your JSON is valid using a validator if you are unsure. If your JSON is not valid you will not get past Waiting for game...
+4) Boot Dolphin-Slippi latest version (the one used for desktop app playback) using the command Dolphin.exe -i "C:/path/to/comboinput.json" (or the similar version for your OS)
+5) Start melee and record the output with OBS or similar.
+6) Trim out all the parts in between clips.
+
+
+{
+  "mode":"queue",
+  "queue":[
+    {
+      "path":"C:\Users\Matt\Documents\test\null_vs_Westballz_1.slp",
+      "startFrame":65,
+      "endFrame":711
+    },
+    {
+      "path":"C:\Users\Matt\Documents\test\null_vs_Westballz_2.slp",
+      "startFrame":30,
+      "endFrame":500
+    }
+  ]
+}
+
+COMMAND: 
+"C:\Users\Matt\AppData\Roaming\Slippi Desktop App\dolphin\Dolphin.exe" -i "C:\Users\Matt\Documents\autoUploader\test.json"

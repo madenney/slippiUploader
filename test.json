@@ -1,0 +1,15 @@
+{
+  "mode":"queue",
+  "queue":[
+    {
+      "path":"C:\\Users\\Matt\\Documents\\autoUploader\\vods\\1\\Game_20120510T110146.slp",
+      "startFrame":3651,
+      "endFrame":3833
+    },
+    {
+      "path":"C:\\Users\\Matt\\Documents\\autoUploader\\vods\\1\\Game_20120510T110146.slp",
+      "startFrame":4996,
+      "endFrame":5176
+    }
+  ]
+}
